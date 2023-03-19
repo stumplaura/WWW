@@ -1,0 +1,42 @@
+body {
+    font-size: 22px;
+    font-family: Papyrus;
+    width: [pixel_size]px;
+}
+
+.topnav {
+   background-color: rgb(102, 9, 145);
+   overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background: #8120a8;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: rgb(102, 9, 145);
+    color: white;
+}
+
+.white-box {
+    background-color: rgb(137, 21, 187);
+    color: white;
+    text-align: center;
+}
+
+footer {
+        margin-top:auto;
+        color: aliceblue;
+        text-align: center;
+        padding: 40px;
+}

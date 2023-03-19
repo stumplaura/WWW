@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>About Me</title>
+        <header style="color:aliceblue"><strong>Welcome to About Me :)</strong></header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel = "stylesheet" type = "text/css" href = "styleme.css" media = "screen"/>
+        <style>
+            body {
+                background-image: url("https://media.istockphoto.com/id/1070923526/vector/abstract-background-blurred-dark-blue-and-purple-backdrop-smooth-banner-template-easy.jpg?s=612x612&w=0&k=20&c=MHeB4YFK3-OxRsmZYCAkll-BzYj53FPYSMismFmuNLU=");
+                background-size: cover;
+            }
+        </style>
+        <style>
+            .slider {
+                width: 500px;
+                height: 300px;
+                background-color: yellow;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                text-align: center;
+                 overflow: hidden;
+            }
+            .image-container {
+                width: 1500px;
+                background-color: pink;
+                height: 300px;
+                clear: both;
+                position: relative;
+                -webkit-transition: left 2s;
+                -moz-transition: left 2s;
+                -o-transition: left 2s;
+                transition: left 2s;
+            }
+            .slide {
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            #slide-1:target ~ .image-container {
+                left: 0px;
+            }
+            #slide-2:target ~ .image-container {
+                left: -500px;
+            }
+            #slide-3:target ~ .image-container {
+                left: -1000px;
+            }
+            .buttons {
+                position: relative;
+                top: -20px;
+            }
+            .buttons a {
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                background-color: lightgreen;
+            }
+    
+        </style>
+    </head>
+    <body>
+        <!--<img src ="images/stump_laura.jpeg" height = "200" width = "200" align="left"></a>-->
+       <div class="topnav">
+        <p style="color:aliceblue; font-size: xx-large;"><strong>Laura's Portfolio</strong></p>
+        <a class="active" href="home.html">Home Page</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="mywork.html">My Work</a>
+        <a href="mystore.html">My Store</a>
+        <a href="contact.html">Contact Me</a>
+       </div>
+       <div class="white-box">
+            <h2><strong>About Me</strong></h2>
+            <p>Major: Computer Science</p>
+            <p>Minor: History</p>
+            <p>Schools: Kean University / NJIT</p>
+            <p>Skills: HTML/CSS, PHP, Java, Python</p>
+            <p>Future Job: 17X Cyberspace Operations Officer</p>
+            <p>Hobbies: Writing, Reading, Drawing, Watching Movies/TV Shows, Gym, Playing with my Puppies!</p>
+
+        </div>
+        <div class="slider">
+         <span id="slide-1"></span>
+         <span id="slide-2"></span>
+         <span id="slide-3"></span>
+         <div class="image-container">
+             <img src="images/FHockey.JPEG" class="slide" width="500" height="300"/>
+             <img src="images/rotc.jpg" class="slide" width="500" height="300"/>
+             <img src="images/puppies.jpg" class="slide" width="500" height="300"/>
+         </div>
+         <div class="buttons">
+             <a href="#slide-1"></a>
+             <a href="#slide-2"></a>
+             <a href="#slide-3"></a>
+         </div>
+        </div>
+ <footer style="font-size: larger;">
+             <a href="https://github.com/stumplaura" style="color:aliceblue" class="fa fa-github"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             <a href="https://www.linkedin.com/in/laura-stump/" style="color:aliceblue" class="fa fa-linkedin"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             <a href="images/resume.png" style="color:aliceblue">Resume</a>
+ 
+             </footer>
+     </body>
+ </html>
+ 

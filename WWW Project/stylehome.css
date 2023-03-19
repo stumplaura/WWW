@@ -1,0 +1,87 @@
+body {
+    font-size: 18px;
+    font-family: Papyrus;
+    width: [pixel_size]px;
+    display: flex;
+    flex-direction: column;
+}
+
+.topnav {
+   background-color: rgb(126, 1, 244);
+   overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background: #6b06d8;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: rgb(126, 1, 244);
+    color: white;
+}
+
+#clock {
+    color: white;
+    text-align: right;
+    font-size: 30px;
+}
+
+p {
+    border: 5px dashed rgb(126, 1, 244);
+}
+
+.bgimage {
+    height: 100vh;
+    background: url('images/galaxy.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(254, 251, 255);
+}
+
+.white-box {
+    background-color: rgba(113, 0, 128, 0.639);
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+
+p {
+    float:inherit;
+    font-size: 45px;
+    color:aliceblue;
+    text-align: left;
+}
+
+footer {
+    margin-top: auto;
+    color: aliceblue;
+    text-align: center;
+    padding: 40px;
+    border: 5px dashed rgb(126, 1, 244);
+}
+                                   

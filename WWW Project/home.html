@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Home Page</title>
+        <header style="color:aliceblue; font-size: larger;"><strong>Welcome to my Home Page :)</strong></header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel = "stylesheet" type = "text/css" href = "stylehome.css" media = "screen"/>
+    </head>
+    <style>
+        body {
+            background-image: url(images/homepurple.jpg);
+            background-size: cover;
+        }
+    </style>
+    <body>
+       <div class="topnav">
+        <p><strong>Laura's Portfolio</strong></p>
+        <a class="active" href="home.html">Home Page</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="mywork.html">My Work</a>
+        <a href="mystore.html">My Store</a>
+        <a href="contact.html">Contact Me</a>
+
+       </div>
+       <div id="clock"></div>
+       <img src ="images/stump_laura.jpeg" height = "200" width = "200" align="left"></a>
+
+       <div class="color">
+       <input id="color_picker" type="color" onchange="showHex();" style="size: 50px;">
+       <span id="color_hex_value"></span>
+       <p style="color:aliceblue; font-size: larger;">Choose a color!</p>
+       </div>
+
+       <button onclick="typeWriter()" style="color:rgb(77, 31, 185); font-size: x-large;">Click me</button>
+
+       <p id="demo"></p>
+
+       <script style="color:aliceblue; font-size: xx-large;">
+       var i = 0;
+       var txt = 'WELCOME TO MY HOME PAGE!!!!';
+       var speed = 50;
+       
+       function typeWriter() {
+         if (i < txt.length) {
+           document.getElementById("demo").innerHTML += txt.charAt(i);
+           i++;
+           setTimeout(typeWriter, speed);
+         }
+
+        }
+       </script>
+       <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, my name is Laura</h2>
+                <p class="hero_desc">This is My Portfolio</p>
+            </div>
+            </div>
+        </div>
+
+    </section>
+       <footer style="font-size: larger;">
+       <a href="https://github.com/stumplaura" style="color:aliceblue" class="fa fa-github"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+       <a href="https://www.linkedin.com/in/laura-stump/" style="color:aliceblue" class="fa fa-linkedin"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+       <a href="images/resume.png" style="color:aliceblue">Resume</a>
+
+       </footer>
+    </body>
+    <script>
+        function displayTime() {
+        let date = new Date();
+        let time = date.toLocaleTimeString();  document.querySelector('#clock').textContent = time;
+        }
+        displayTime();
+        const createClock = setInterval(displayTime, 1000);
+        </script>
+</html>
+                                          
